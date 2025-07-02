@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>新潟スタンプラリー</title>
+  <style>
+    /* リセット */
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+    }
+
+    /* 背景用 */
+    .background {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+      z-index: -1;
+    }
+
+    .background img {
+      position: absolute;
+      top: -90px;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 130vh;
+      width: auto;
+      object-fit: cover;
+      /* 画像の縦横比を保ちつつ高さ100vhにフィット */
+      user-select: none;
+      pointer-events: none;
+    }
+
+    /* コンテンツ用 */
+    .container {
+      max-width: 360px;
+      margin: auto;
+      padding: 20px 15px;
+      position: relative;
+      z-index: 1; /* 前面に表示 */
+    }
+
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+    .logo {
+      height: 60px;
+      border-radius: 5px;
+    }
+
+    .badge-btn {
+      background-color: #ffc933;
+      border: none;
+      border-radius: 20px;
+      padding: 8px 20px;
+      font-weight: bold;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .menu {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .menu button {
+      background-color: #ffc933;
+      border: none;
+      border-radius: 30px;
+      padding: 16px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #333;
+      width: 100%;
+      box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+      transition: transform 0.1s ease;
+      cursor: pointer;
+    }
+
+    .menu button:active {
+      transform: scale(0.98);
+    }
+    .watermark {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      font-size: 12px;
+      color: #fff;
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 4px 8px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 背景用タグ -->
+  <div class="background">
+    <img src="/assets/image/FigJam basics (4).png" alt="背景画像" />
+  </div>
+
+  <div class="container">
+    <div class="top-bar">
+      <img src="/assets/image/logo.png" alt="新潟ロゴ" class="logo" />
+      <button onclick="location.href='../3_badge_list/index.html'" class="badge-btn">バッジ一覧</button>
+    </div>
+
+    <div class="menu">
+    </div>
+    <div class="watermark">画像はイメージです</div>
+  </div>
+
+</body>
+</html>
