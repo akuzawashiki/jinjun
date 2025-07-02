@@ -37,13 +37,51 @@
       max-width: 300px;
     }
 
-    .login-text {
-      font-size: 18px;
-      letter-spacing: 3px;
-    }
-    .login-text a{
-      font-size: 18px;
-      letter-spacing: 3px;
-      color: black;
-      text-decoration: none;
-    }
+.login-text a {
+  font-size: 18px;
+  letter-spacing: 3px;
+  text-decoration: none;
+  color: transparent;
+  background: linear-gradient(90deg, #ff005a, #ffae00, #00ff95, #00cfff, #a900ff, #ff005a);
+  background-size: 400%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: gradientMove 6s linear infinite;
+  position: relative;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.login-text a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0%;
+  height: 3px;
+  background: linear-gradient(90deg, #ff00cc, #3333ff);
+  border-radius: 2px;
+  transition: width 0.4s ease;
+}
+
+.login-text a:hover {
+  transform: scale(1.1);
+}
+
+.login-text a:hover::after {
+  width: 100%;
+}
+
+/* 背景グラデーションアニメーション */
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
