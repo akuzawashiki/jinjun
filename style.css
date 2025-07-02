@@ -1,0 +1,49 @@
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      background-color: #fff;
+      padding: 40px 20px;
+      margin: 0;
+    }
+
+    .title-box {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .title-box h1 {
+      font-size: 36px;
+      margin: 0;
+      font-family: "serif";
+    }
+
+    .title-box p {
+      font-size: 18px;
+      letter-spacing: 4px;
+      margin: 5px 0 0;
+    }
+
+    .image-box {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 10px;
+      margin-bottom: 40px;
+    }
+
+    .image-box img {
+      width: 100%;
+      max-width: 300px;
+    }
+
+    .login-text {
+      font-size: 18px;
+      letter-spacing: 3px;
+    }
+    .login-text a{
+      font-size: 18px;
+      letter-spacing: 3px;
+      color: black;
+      text-decoration: none;
+    }
