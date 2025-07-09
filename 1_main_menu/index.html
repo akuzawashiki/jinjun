@@ -89,6 +89,23 @@
     .menu button:active {
       transform: scale(0.98);
     }
+.chat-button {
+  position: absolute;
+  bottom: 20px;  /* ← .containerの下から20px */
+  right: calc(50vw - 180px);      /* ← .containerの右端 */
+  width: 48px;
+  height: 48px;
+  background-color: #ffc933;
+  border-radius: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
   </style>
 </head>
 <body>
@@ -97,21 +114,23 @@
   <div class="background">
     <img src="../assets/image/FigJam basics (1).png" alt="背景画像" />
   </div>
-
   <div class="container">
     <div class="top-bar">
       <a href="../1_main_menu/index.html"><img src="../assets/image/logo.png" alt="新潟ロゴ" class="logo" /></a>
-      <button onclick="location.href='../3_badge_list/index.html'" class="badge-btn">バッジ</button>
+      <button title="アブーチメントってやつ" onclick="location.href='../3_badge_list/index.html'" class="badge-btn">バッジ</button>
     </div>
 
     <div class="menu">
-      <button onclick="location.href='../2_stamp_rally/index.html'">スタンプラリー</button>
-      <button onclick="location.href='../3_stamp_list/index.html'">集めたスタンプ</button>
-      <button onclick="location.href='../4_rally_spot/index.html'">スタンプラリースポット</button>
-      <button onclick="location.href='../7_SNS/index.html'">SNS</button>
-      <button onclick="location.href='../8_keihinn_list/index.html'">景品一覧</button>
+      <button title="制覇すると特典クーポン発行！！" onclick="location.href='../2_stamp_rally/index.html'">スタンプラリー</button>
+      <button title="スタンプラリー達成で抽選参加権や商品券、限定アイテムプレゼント" onclick="location.href='../3_stamp_list/index.html'">集めたスタンプ</button>
+      <button title="今が熱い！！！旬のおすすめスポット" onclick="location.href='../4_rally_spot/index.html'">スタンプラリースポット</button>
+      <button title="最新のユーザーレビューを表示！！"onclick="location.href='../7_SNS/index.html'">SNS</button>
+      <button title="集めたスタンプで新潟の良いもの、と交換しよう！！"onclick="location.href='../8_keihinn_list/index.html'">景品一覧</button>
     </div>
   </div>
+          <div class="chat-button" title="チャットボットと会話！！！" onclick="location.href='../8_keihinn_list/index.html'">
+  💬
+</div>
 
 </body>
 </html>
