@@ -6,6 +6,9 @@
 2. 任意の位置に解凍
 3. 開いてすぐのindex.htmlをブラウザで開く
 
+# リンク
+https://akuzawashiki.github.io/jinjun/
+
 ## ログイン
 ![login](https://i.imgur.com/Rhs2PKQ.png"サンプル")
 ## メニュー
