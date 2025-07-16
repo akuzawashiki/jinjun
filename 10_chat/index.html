@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>チャット</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background-color: #eaeaea;
+      display: flex;
+      justify-content: center;
+      padding: 0;
+    }
+
+    .phone-frame {
+      width: 420px;
+      max-width: 100%;
+      height: 100vh;
+      background-color: #fff;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      box-sizing: border-box;
+    }
+
+    .chat-header {
+      background-color: rgb(0, 160, 0);
+      color: white;
+      padding: 12px;
+      font-weight: bold;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .chat-body {
+      flex: 1;
+      overflow-y: auto;
+      padding: 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .message {
+      max-width: 75%;
+      padding: 10px 14px;
+      border-radius: 16px;
+      line-height: 1.4;
+      font-size: 14px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+
+    .message.user {
+      background-color: #dbe4ff;
+      align-self: flex-end;
+      border-bottom-right-radius: 0;
+    }
+
+    .message.bot {
+      background-color: #f2f2f2;
+      align-self: flex-start;
+      border-bottom-left-radius: 0;
+    }
+
+    .chat-input {
+      display: flex;
+      padding: 10px;
+      border-top: 1px solid #ccc;
+      background-color: #fafafa;
+    }
+
+    .chat-input input {
+      flex: 1;
+      padding: 8px 12px;
+      border: 1px solid #ccc;
+      border-radius: 20px;
+      font-size: 14px;
+      outline: none;
+    }
+
+    .chat-input button {
+      margin-left: 8px;
+      background-color: rgb(0, 160, 0);
+      color: white;
+      border: none;
+      border-radius: 20px;
+      padding: 8px 16px;
+      cursor: pointer;
+    }
+
+    .chat-input button:hover {
+      background-color: #b29b6e;
+    }
+  </style>
+</head>
+<body>
+  <div class="phone-frame">
+    <div class="chat-header">観光案内チャット</div>
+
+    <div class="chat-body">
+      <div class="message bot">こんにちは！ようこそ。ご質問はありますか？</div>
+      <div class="message user">このアプリのソースコードは？</div>
+      <div class="message bot">はい、こちらにございます。</div>
+      <div class="message bot">https://github.com/akuzawashiki/jinjun</div>
+      <div class="message user">ありがとうございます</div>
+      <div class="message bot">ã‚Œã‚“ã«ã‚ˆã‚“ã ã—ã¾ã—ã¦</div>
+    <div class="message user">！？</div>
+    </div>
+
+    <div class="chat-input">
+      <input type="text" placeholder="メッセージを入力..." />
+      <button>送信</button>
+    </div>
+  </div>
+</body>
+</html>
