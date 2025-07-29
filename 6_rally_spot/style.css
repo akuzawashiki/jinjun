@@ -1,4 +1,3 @@
-/* リセット */
 html,
 body {
   height: 100%;
@@ -7,7 +6,6 @@ body {
   font-family: sans-serif;
 }
 
-/* 背景用 */
 .background {
   position: fixed;
   top: 0;
@@ -16,27 +14,27 @@ body {
   height: 100vh;
   overflow: hidden;
   z-index: -1;
+  cursor: pointer; /* 視覚的にクリックできることを示す */
 }
 
 .background img {
   position: absolute;
-  top: 90px;
+  top: -70px;
   left: 50%;
   transform: translateX(-50%);
-  width: 400px;
+  height: 120vh;
+  width: auto;
   object-fit: cover;
-  /* 画像の縦横比を保ちつつ高さ100vhにフィット */
   user-select: none;
-  pointer-events: none;
+  pointer-events: none; /* 画像がクリックをブロックしないようにする */
 }
 
-/* コンテンツ用 */
 .container {
   max-width: 360px;
   margin: auto;
   padding: 20px 15px;
   position: relative;
-  z-index: 1; /* 前面に表示 */
+  z-index: 1;
 }
 
 .top-bar {
@@ -45,6 +43,7 @@ body {
   align-items: center;
   margin-bottom: 40px;
 }
+
 .logo {
   height: 60px;
   border-radius: 5px;
@@ -83,6 +82,7 @@ body {
 .menu button:active {
   transform: scale(0.98);
 }
+
 .watermark {
   position: fixed;
   bottom: 10px;
@@ -92,4 +92,5 @@ body {
   background-color: rgba(0, 0, 0, 0.4);
   padding: 4px 8px;
   border-radius: 5px;
+  z-index: 2;
 }
