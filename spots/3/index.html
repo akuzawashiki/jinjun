@@ -1,113 +1,142 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>新潟スタンプラリー</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: sans-serif;
-      background-color: #eaeaea;
-      display: flex;
-      justify-content: center;
-      padding: 0px 0;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>新潟スタンプラリー</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: sans-serif;
+        background-color: #eaeaea;
+        display: flex;
+        justify-content: center;
+        padding: 0px 0;
+      }
 
-    .phone-frame {
-      width: 420px;
-      max-width: 100%;
-      background-color: #fff;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-      overflow-y: auto;
-      padding: 5px;
-      box-sizing: border-box;
-      height: 100vh;
-    }
+      .phone-frame {
+        width: 420px;
+        max-width: 100%;
+        background-color: #fff;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        overflow-y: auto;
+        padding: 5px;
+        box-sizing: border-box;
+        height: 100vh;
+      }
 
-    .spot {
-      display: flex;
-      flex-direction: row;
-      align-items: flex-start;
-      margin-bottom: 24px;
-    }
+      .spot {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        margin-bottom: 24px;
+      }
 
-    .spot-description {
-      flex: 1;
-    }
+      .spot-description {
+        flex: 1;
+      }
 
-    .spot-description h2 {
-      margin: 0 0 6px;
-      font-size: 16px;
-    }
+      .spot-description h2 {
+        margin: 0 0 6px;
+        font-size: 16px;
+      }
 
-    .spot-description p {
-      margin: 0;
-      font-size: 14px;
-    }
+      .spot-description p {
+        margin: 0;
+        font-size: 14px;
+      }
 
-    .spot-image {
-      width: 100%;
-      height: 300px;
-      object-fit: cover;
-      border-radius: 0px;
-      box-shadow: 0 1px 5px rgba(0,0,0,0.1);
-    }
+      .spot-image {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 0px;
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+      }
 
-    .phone-frame::-webkit-scrollbar {
-      width: 6px;
-    }
+      .phone-frame::-webkit-scrollbar {
+        width: 6px;
+      }
 
-    .phone-frame::-webkit-scrollbar-thumb {
-      background-color: #bbb;
-      border-radius: 3px;
-    }
-  </style>
-</head>
-<body>
-  <div class="phone-frame">
+      .phone-frame::-webkit-scrollbar-thumb {
+        background-color: #bbb;
+        border-radius: 3px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="phone-frame">
+      <h2
+        style="
+          border-radius: 100px;
+          background-color: gold;
+          padding: 10px;
+          box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+        "
+      >
+        笹川流れ
+      </h2>
 
-    <h2 style="border-radius: 100px; background-color: gold; padding: 10px; box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);">笹川流れ</h2>
-    
-    <div class="spot">
-      <div class="spot-description">
-        <img src="https://niigata-kankou.or.jp/image/rendering/attraction_image/102244/trim.900/3/2?v=59fdbf053f8c953453674860a4de02d8b0622b91" alt="笹川流れの写真1" class="spot-image">
-        <img src="https://niigata-kankou.or.jp/image/rendering/attraction_image/102248/trim.900/3/2?v=21ffcdf042d31edb0d09ef0ec86519e53a50b546" alt="笹川流れの写真2" class="spot-image">
-        <img src="https://niigata-kankou.or.jp/image/rendering/attraction_image/102246/trim.900/3/2?v=7dfe573b6b77b9c4b00e9f06d5e0f8c48115c816" alt="笹川流れの写真3" class="spot-image">
+      <div class="spot">
+        <div class="spot-description">
+          <img
+            src="https://niigata-kankou.or.jp/image/rendering/attraction_image/102244/trim.900/3/2?v=59fdbf053f8c953453674860a4de02d8b0622b91"
+            alt="笹川流れの写真1"
+            class="spot-image"
+          />
+          <img
+            src="https://niigata-kankou.or.jp/image/rendering/attraction_image/102248/trim.900/3/2?v=21ffcdf042d31edb0d09ef0ec86519e53a50b546"
+            alt="笹川流れの写真2"
+            class="spot-image"
+          />
+          <img
+            src="https://niigata-kankou.or.jp/image/rendering/attraction_image/102246/trim.900/3/2?v=7dfe573b6b77b9c4b00e9f06d5e0f8c48115c816"
+            alt="笹川流れの写真3"
+            class="spot-image"
+          />
 
-        <p>笹川流れは新潟県村上市に位置し、透明度の高い美しい海と、奇岩が連なる海岸線が魅力の名勝です。国の名勝・天然記念物にも指定されており、ドライブや遊覧船からの景観が楽しめる絶景スポットです。夕日が沈む海岸線は特にロマンチックで、写真映えスポットとしても人気です。</p>
+          <p>
+            笹川流れは新潟県村上市に位置し、透明度の高い美しい海と、奇岩が連なる海岸線が魅力の名勝です。国の名勝・天然記念物にも指定されており、ドライブや遊覧船からの景観が楽しめる絶景スポットです。夕日が沈む海岸線は特にロマンチックで、写真映えスポットとしても人気です。
+          </p>
 
-        <p><strong>名称：</strong>笹川流れ</p>
+          <p><strong>名称：</strong>笹川流れ</p>
 
-        <p><strong>所在地：</strong>新潟県村上市桑川～今川</p>
+          <p><strong>所在地：</strong>新潟県村上市桑川～今川</p>
 
-        <p><strong>営業時間：</strong>  
-        常時開放（遊覧船は運航時間あり）<br>
-        ※悪天候時は一部立入制限や運航中止の場合あり</p>
+          <p>
+            <strong>営業時間：</strong> 常時開放（遊覧船は運航時間あり）<br />
+            ※悪天候時は一部立入制限や運航中止の場合あり
+          </p>
 
-        <p><strong>駐車場：</strong>  
-        各所に無料・有料駐車場あり（観光施設・道の駅など）</p>
+          <p>
+            <strong>駐車場：</strong>
+            各所に無料・有料駐車場あり（観光施設・道の駅など）
+          </p>
 
-        <p><strong>アクセス：</strong>  
-        ・車：日本海東北自動車道「村上瀬波温泉IC」から国道345号を北へ約30分<br>
-        ・公共交通：JR羽越本線「桑川駅」下車すぐ</p>
+          <p>
+            <strong>アクセス：</strong>
+            ・車：日本海東北自動車道「村上瀬波温泉IC」から国道345号を北へ約30分<br />
+            ・公共交通：JR羽越本線「桑川駅」下車すぐ
+          </p>
 
-        <p><strong>備考：</strong>  
-        笹川流れ遊覧船の運行あり（要予約の場合あり）<br>
-        海水浴や磯遊び、フォトスポットとしても人気</p>
+          <p>
+            <strong>備考：</strong>
+            笹川流れ遊覧船の運行あり（要予約の場合あり）<br />
+            海水浴や磯遊び、フォトスポットとしても人気
+          </p>
 
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3156.010337666235!2d139.5053182757837!3d38.33158967184754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5ff6220e79cf1b7f%3A0x9e45b6ffb13cbec7!2z5a-n5bed6I6B!5e0!3m2!1sja!2sjp!4v1721107200001!5m2!1sja!2sjp"
-          width="100%"
-          height="500px"
-          style="border:0;"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3156.010337666235!2d139.5053182757837!3d38.33158967184754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5ff6220e79cf1b7f%3A0x9e45b6ffb13cbec7!2z5a-n5bed6I6B!5e0!3m2!1sja!2sjp!4v1721107200001!5m2!1sja!2sjp"
+            width="100%"
+            height="500px"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
+        </div>
       </div>
     </div>
-  </div>
-</body>
+  </body>
 </html>

@@ -1,126 +1,173 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>新潟スタンプラリー</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: sans-serif;
-      background-color: #eaeaea;
-      display: flex;
-      justify-content: center;
-      padding: 0px 0;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>新潟スタンプラリー</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: sans-serif;
+        background-color: #eaeaea;
+        display: flex;
+        justify-content: center;
+        padding: 0px 0;
+      }
 
-    .phone-frame {
-      width: 420px; /* スマホ幅 */
-      max-width: 100%;
-      background-color: #fff;
-      border-radius: 0px;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-      overflow-y: auto;
-      padding: 5px;
-      box-sizing: border-box;
-      height: 100vh;
-    }
+      .phone-frame {
+        width: 420px; /* スマホ幅 */
+        max-width: 100%;
+        background-color: #fff;
+        border-radius: 0px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        overflow-y: auto;
+        padding: 5px;
+        box-sizing: border-box;
+        height: 100vh;
+      }
 
-    .spot {
-      display: flex;
-      flex-direction: row;
-      align-items: flex-start;
-      margin-bottom: 24px;
-      gap: 12px;
-      border: #000 solid 1px;
-      padding: 3px;
-    }
+      .spot {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        margin-bottom: 24px;
+        gap: 12px;
+        border: #000 solid 1px;
+        padding: 3px;
+      }
 
-    .spot-description {
-      flex: 1;
-    }
+      .spot-description {
+        flex: 1;
+      }
 
-    .spot-description h2 {
-      margin: 0 0 6px;
-      font-size: 16px;
-    }
+      .spot-description h2 {
+        margin: 0 0 6px;
+        font-size: 16px;
+      }
 
-    .spot-description p {
-      margin: 0;
-      font-size: 14px;
-    }
+      .spot-description p {
+        margin: 0;
+        font-size: 14px;
+      }
 
-    .spot-image {
-      width: 120px;
-      height: 100%;
-      object-fit: cover;
-      border-radius: 0px;
-      box-shadow: 0 1px 5px rgba(0,0,0,0.1);
-    }
+      .spot-image {
+        width: 120px;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 0px;
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+      }
 
-    /* スクロールバー（任意） */
-    .phone-frame::-webkit-scrollbar {
-      width: 6px;
-    }
-    .phone-frame::-webkit-scrollbar-thumb {
-      background-color: #bbb;
-      border-radius: 3px;
-    }
-  </style>
-</head>
-<body>
-  <div class="phone-frame">
-
-    <h2 style="border-radius: 100px; background-color: gold; padding: 10px; box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);">新潟観光おすすめスポット</h2>
-    <div class="spot">
-      <div class="spot-description">
-        <h2>清津峡渓谷トンネル</h2>
-        <p>黒部峡谷・大杉谷とともに日本三大峡谷の一つとして知られる「清津峡」。川を挟んで切り立つ巨大な岩壁は全国に誇るＶ字形の大峡谷をつくり、国の名勝・天然記念物にも指定されています。</p>
-        <a href="../spots/1/index.html">詳細 ==></a>
+      /* スクロールバー（任意） */
+      .phone-frame::-webkit-scrollbar {
+        width: 6px;
+      }
+      .phone-frame::-webkit-scrollbar-thumb {
+        background-color: #bbb;
+        border-radius: 3px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="phone-frame">
+      <h2
+        style="
+          border-radius: 100px;
+          background-color: gold;
+          padding: 10px;
+          box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+        "
+      >
+        新潟観光おすすめスポット
+      </h2>
+      <div class="spot">
+        <div class="spot-description">
+          <h2>清津峡渓谷トンネル</h2>
+          <p>
+            黒部峡谷・大杉谷とともに日本三大峡谷の一つとして知られる「清津峡」。川を挟んで切り立つ巨大な岩壁は全国に誇るＶ字形の大峡谷をつくり、国の名勝・天然記念物にも指定されています。
+          </p>
+          <a href="../spots/1/index.html">詳細 ==></a>
+        </div>
+        <img
+          src="https://niigata-kankou.or.jp/image/rendering/attraction_image/209333/trim.640/1/1?v=40e6d38ca5d2b31edecba97e961f0b7d8c39c07d"
+          alt=""
+          class="spot-image"
+        />
       </div>
-      <img src="https://niigata-kankou.or.jp/image/rendering/attraction_image/209333/trim.640/1/1?v=40e6d38ca5d2b31edecba97e961f0b7d8c39c07d" alt="" class="spot-image">
-    </div>
 
-    <div class="spot">
-      <div class="spot-description">
-        <h2>寺泊魚の市場通り（魚のアメ横）</h2>
-        <p>にぎわいと活気あふれる魚市場。地魚をはじめ全国の新鮮な海産物が集まり豊富な品揃えと生きの良さが自慢</p>
-        <a href="../spots/2/index.html">詳細 ==></a>
+      <div class="spot">
+        <div class="spot-description">
+          <h2>寺泊魚の市場通り（魚のアメ横）</h2>
+          <p>
+            にぎわいと活気あふれる魚市場。地魚をはじめ全国の新鮮な海産物が集まり豊富な品揃えと生きの良さが自慢
+          </p>
+          <a href="../spots/2/index.html">詳細 ==></a>
+        </div>
+        <img
+          src="https://niigata-kankou.or.jp/image/rendering/attraction_image/207494/trim.900/3/2?v=cbadbe4f6775802b46fcee6dfd41c1bc6da3d5a1"
+          alt=""
+          class="spot-image"
+        />
       </div>
-      <img src="https://niigata-kankou.or.jp/image/rendering/attraction_image/207494/trim.900/3/2?v=cbadbe4f6775802b46fcee6dfd41c1bc6da3d5a1" alt="" class="spot-image">
-    </div>
 
-    <div class="spot">
-      <div class="spot-description">
-        <h2>笹川流れ</h2>
-        <p>澄み切った碧い海が美しく、日本屈指の透明度を誇る笹川流れ。11km続く海岸では、日本海の荒波の浸食によりできた奇岩、岩礁や洞窟など、変化に富んだ風景が広がり、豪壮な景観は国指定の名勝及び天然記念物となっています。</p>
-        <a href="../spots/3/index.html">詳細 ==></a>
+      <div class="spot">
+        <div class="spot-description">
+          <h2>笹川流れ</h2>
+          <p>
+            澄み切った碧い海が美しく、日本屈指の透明度を誇る笹川流れ。11km続く海岸では、日本海の荒波の浸食によりできた奇岩、岩礁や洞窟など、変化に富んだ風景が広がり、豪壮な景観は国指定の名勝及び天然記念物となっています。
+          </p>
+          <a href="../spots/3/index.html">詳細 ==></a>
+        </div>
+        <img
+          src="https://niigata-kankou.or.jp/image/rendering/attraction_image/1944/trim.900/3/2?v=c1f6497beec099cc0a70fb0c76c0a59aa270c3ca"
+          alt=""
+          class="spot-image"
+        />
       </div>
-      <img src="https://niigata-kankou.or.jp/image/rendering/attraction_image/1944/trim.900/3/2?v=c1f6497beec099cc0a70fb0c76c0a59aa270c3ca" alt="" class="spot-image">
-    </div>
 
-    <div class="spot">
-      <div class="spot-description">
-        <h2>津南ひまわり広場2025</h2>
-        <p>常設してある見晴台からはひまわり畑を一望することができ、美しい景色を楽しめます。
-また、畑の中には「ひまわり迷路（無料）」があり子供たちに大変人気のアトラクションです。</p>
-        <a href="../spots/4/index.html">詳細 ==></a>
+      <div class="spot">
+        <div class="spot-description">
+          <h2>津南ひまわり広場2025</h2>
+          <p>
+            常設してある見晴台からはひまわり畑を一望することができ、美しい景色を楽しめます。
+            また、畑の中には「ひまわり迷路（無料）」があり子供たちに大変人気のアトラクションです。
+          </p>
+          <a href="../spots/4/index.html">詳細 ==></a>
+        </div>
+        <img
+          src="https://niigata-kankou.or.jp/image/rendering/attraction_image/205936/trim.900/3/2?v=d3ec202cb9e028d1bce910ecd525d4d0228f3022"
+          alt=""
+          class="spot-image"
+        />
       </div>
-      <img src="https://niigata-kankou.or.jp/image/rendering/attraction_image/205936/trim.900/3/2?v=d3ec202cb9e028d1bce910ecd525d4d0228f3022" alt="" class="spot-image">
-    </div>
 
-    <div class="spot">
-      <div class="spot-description">
-        <h2>北方文化博物館</h2>
-        <p>建物や庭園から美術品のコレクションにいたるまで、新潟の伝統と芸術にあふれる豪農の館。
-「北方文化博物館」は、越後の大地主伊藤家の旧大邸宅を保存・公開しています。</p>
-        <a href="../spots/5/index.html">詳細 ==></a>
+      <div class="spot">
+        <div class="spot-description">
+          <h2>北方文化博物館</h2>
+          <p>
+            建物や庭園から美術品のコレクションにいたるまで、新潟の伝統と芸術にあふれる豪農の館。
+            「北方文化博物館」は、越後の大地主伊藤家の旧大邸宅を保存・公開しています。
+          </p>
+          <a href="../spots/5/index.html">詳細 ==></a>
+        </div>
+        <img
+          src="https://niigata-kankou.or.jp/image/rendering/attraction_image/7781/trim.900/3/2?v=c1f703ace6fae65420bd4c8dcce38e186184f879"
+          alt=""
+          class="spot-image"
+        />
       </div>
-      <img src="https://niigata-kankou.or.jp/image/rendering/attraction_image/7781/trim.900/3/2?v=c1f703ace6fae65420bd4c8dcce38e186184f879" alt="" class="spot-image">
+
+      <p
+        style="
+          border-radius: 100px;
+          background-color: gold;
+          padding: 10px;
+          box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+          text-align: center;
+        "
+      >
+        読み込む
+      </p>
     </div>
-
-    <p style="border-radius: 100px; background-color: gold; padding: 10px; box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2); text-align: center;">読み込む</p>
-
-  </div>
-</body>
+  </body>
 </html>
