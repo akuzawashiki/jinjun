@@ -1,114 +1,139 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>新潟スタンプラリー</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: sans-serif;
-      background-color: #eaeaea;
-      display: flex;
-      justify-content: center;
-      padding: 0px 0;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>新潟スタンプラリー</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: sans-serif;
+        background-color: #eaeaea;
+        display: flex;
+        justify-content: center;
+        padding: 0px 0;
+      }
 
-    .phone-frame {
-      width: 420px;
-      max-width: 100%;
-      background-color: #fff;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-      overflow-y: auto;
-      padding: 5px;
-      box-sizing: border-box;
-      height: 100vh;
-    }
+      .phone-frame {
+        width: 420px;
+        max-width: 100%;
+        background-color: #fff;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        overflow-y: auto;
+        padding: 5px;
+        box-sizing: border-box;
+        height: 100vh;
+      }
 
-    .spot {
-      display: flex;
-      flex-direction: row;
-      align-items: flex-start;
-      margin-bottom: 24px;
-    }
+      .spot {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        margin-bottom: 24px;
+      }
 
-    .spot-description {
-      flex: 1;
-    }
+      .spot-description {
+        flex: 1;
+      }
 
-    .spot-description h2 {
-      margin: 0 0 6px;
-      font-size: 16px;
-    }
+      .spot-description h2 {
+        margin: 0 0 6px;
+        font-size: 16px;
+      }
 
-    .spot-description p {
-      margin: 0;
-      font-size: 14px;
-    }
+      .spot-description p {
+        margin: 0;
+        font-size: 14px;
+      }
 
-    .spot-image {
-      width: 100%;
-      height: 300px;
-      object-fit: cover;
-      border-radius: 0px;
-      box-shadow: 0 1px 5px rgba(0,0,0,0.1);
-    }
+      .spot-image {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 0px;
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+      }
 
-    .phone-frame::-webkit-scrollbar {
-      width: 6px;
-    }
+      .phone-frame::-webkit-scrollbar {
+        width: 6px;
+      }
 
-    .phone-frame::-webkit-scrollbar-thumb {
-      background-color: #bbb;
-      border-radius: 3px;
-    }
-  </style>
-</head>
-<body>
-  <div class="phone-frame">
+      .phone-frame::-webkit-scrollbar-thumb {
+        background-color: #bbb;
+        border-radius: 3px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="phone-frame">
+      <h2
+        style="
+          border-radius: 100px;
+          background-color: gold;
+          padding: 10px;
+          box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+        "
+      >
+        北方文化博物館
+      </h2>
 
-    <h2 style="border-radius: 100px; background-color: gold; padding: 10px; box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);">北方文化博物館</h2>
-    
-    <div class="spot">
-      <div class="spot-description">
-        <img src="https://niigata-kankou.or.jp/image/rendering/attraction_image/102153/trim.900/3/2?v=9cb51a60d06bb5a06125eeb24b8ef8134174e9b1" alt="北方文化博物館の写真1" class="spot-image">
-        <img src="https://niigata-kankou.or.jp/image/rendering/attraction_image/102156/trim.900/3/2?v=002af40f684f0e0d48d3d6d60c4de66eb5b4ae1b" alt="北方文化博物館の写真2" class="spot-image">
-        <img src="https://niigata-kankou.or.jp/image/rendering/attraction_image/102157/trim.900/3/2?v=dd0fc664d91c598420a54a57ed6f22b5e2164b5b" alt="北方文化博物館の写真3" class="spot-image">
+      <div class="spot">
+        <div class="spot-description">
+          <img
+            src="https://niigata-kankou.or.jp/image/rendering/attraction_image/102153/trim.900/3/2?v=9cb51a60d06bb5a06125eeb24b8ef8134174e9b1"
+            alt="北方文化博物館の写真1"
+            class="spot-image"
+          />
+          <img
+            src="https://niigata-kankou.or.jp/image/rendering/attraction_image/102156/trim.900/3/2?v=002af40f684f0e0d48d3d6d60c4de66eb5b4ae1b"
+            alt="北方文化博物館の写真2"
+            class="spot-image"
+          />
+          <img
+            src="https://niigata-kankou.or.jp/image/rendering/attraction_image/102157/trim.900/3/2?v=dd0fc664d91c598420a54a57ed6f22b5e2164b5b"
+            alt="北方文化博物館の写真3"
+            class="spot-image"
+          />
 
-        <p>北方文化博物館は、新潟市江南区にある越後の豪農・伊藤家の旧邸を活用した歴史ある博物館です。明治から昭和初期の生活様式や文化、美しい庭園、広大な屋敷がそのまま残されており、まるでタイムスリップしたかのような気分が味わえます。文化財としても価値が高く、四季折々の景観も見応え抜群です。</p>
+          <p>
+            北方文化博物館は、新潟市江南区にある越後の豪農・伊藤家の旧邸を活用した歴史ある博物館です。明治から昭和初期の生活様式や文化、美しい庭園、広大な屋敷がそのまま残されており、まるでタイムスリップしたかのような気分が味わえます。文化財としても価値が高く、四季折々の景観も見応え抜群です。
+          </p>
 
-        <p><strong>名称：</strong>北方文化博物館</p>
+          <p><strong>名称：</strong>北方文化博物館</p>
 
-        <p><strong>所在地：</strong>新潟県新潟市江南区沢海2丁目15-25</p>
+          <p><strong>所在地：</strong>新潟県新潟市江南区沢海2丁目15-25</p>
 
-        <p><strong>営業時間：</strong>  
-        ・4月〜11月：9:00～17:00<br>
-        ・12月〜3月：9:00～16:30<br>
-        ※年中無休（年末年始を除く）</p>
+          <p>
+            <strong>営業時間：</strong> ・4月〜11月：9:00～17:00<br />
+            ・12月〜3月：9:00～16:30<br />
+            ※年中無休（年末年始を除く）
+          </p>
 
-        <p><strong>駐車場：</strong>  
-        無料駐車場あり（普通車 約200台）</p>
+          <p><strong>駐車場：</strong> 無料駐車場あり（普通車 約200台）</p>
 
-        <p><strong>アクセス：</strong>  
-        ・車：磐越自動車道「新津IC」から約15分<br>
-        ・公共交通：JR「新津駅」から車で約10分、または「沢海」バス停から徒歩すぐ</p>
+          <p>
+            <strong>アクセス：</strong>
+            ・車：磐越自動車道「新津IC」から約15分<br />
+            ・公共交通：JR「新津駅」から車で約10分、または「沢海」バス停から徒歩すぐ
+          </p>
 
-        <p><strong>備考：</strong>  
-        入館料あり（一般800円）<br>
-        団体や学生割引あり。レストランやお土産処も併設。</p>
+          <p>
+            <strong>備考：</strong> 入館料あり（一般800円）<br />
+            団体や学生割引あり。レストランやお土産処も併設。
+          </p>
 
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3174.2928324139164!2d139.1337252757851!3d37.831878271969854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5ff4c78aa05132c3%3A0x360a11ec748897f6!2z5Y2X5pys5paH6Imv5Lq65Zub56eR5a2m6ZaA!5e0!3m2!1sja!2sjp!4v1721110003123!5m2!1sja!2sjp"
-          width="100%"
-          height="500px"
-          style="border:0;"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3174.2928324139164!2d139.1337252757851!3d37.831878271969854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5ff4c78aa05132c3%3A0x360a11ec748897f6!2z5Y2X5pys5paH6Imv5Lq65Zub56eR5a2m6ZaA!5e0!3m2!1sja!2sjp!4v1721110003123!5m2!1sja!2sjp"
+            width="100%"
+            height="500px"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
+        </div>
       </div>
     </div>
-  </div>
-</body>
+  </body>
 </html>

@@ -1,129 +1,162 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>新潟スタンプラリー</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: sans-serif;
-      background-color: #eaeaea;
-      display: flex;
-      justify-content: center;
-      padding: 0px 0;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>新潟スタンプラリー</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: sans-serif;
+        background-color: #eaeaea;
+        display: flex;
+        justify-content: center;
+        padding: 0px 0;
+      }
 
-    .phone-frame {
-      width: 420px; /* スマホ幅 */
-      max-width: 100%;
-      background-color: #fff;
-      border-radius: 0px;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-      overflow-y: auto;
-      padding: 5px;
-      box-sizing: border-box;
-      height: 100vh;
-    }
+      .phone-frame {
+        width: 420px; /* スマホ幅 */
+        max-width: 100%;
+        background-color: #fff;
+        border-radius: 0px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        overflow-y: auto;
+        padding: 5px;
+        box-sizing: border-box;
+        height: 100vh;
+      }
 
-    .spot {
-      display: flex;
-      flex-direction: row;
-      align-items: flex-start;
-      margin-bottom: 24px;
-    }
+      .spot {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        margin-bottom: 24px;
+      }
 
-    .spot-description {
-      flex: 1;
-    }
+      .spot-description {
+        flex: 1;
+      }
 
-    .spot-description h2 {
-      margin: 0 0 6px;
-      font-size: 16px;
-    }
+      .spot-description h2 {
+        margin: 0 0 6px;
+        font-size: 16px;
+      }
 
-    .spot-description p {
-      margin: 0;
-      font-size: 14px;
-    }
+      .spot-description p {
+        margin: 0;
+        font-size: 14px;
+      }
 
-    .spot-image {
-      width: 100%;
-      height: 300px;
-      object-fit: cover;
-      border-radius: 0px;
-      box-shadow: 0 1px 5px rgba(0,0,0,0.1);
-    }
+      .spot-image {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 0px;
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+      }
 
-    /* スクロールバー（任意） */
-    .phone-frame::-webkit-scrollbar {
-      width: 6px;
-    }
-    .phone-frame::-webkit-scrollbar-thumb {
-      background-color: #bbb;
-      border-radius: 3px;
-    }
-  </style>
-</head>
-<body>
-  <div class="phone-frame">
+      /* スクロールバー（任意） */
+      .phone-frame::-webkit-scrollbar {
+        width: 6px;
+      }
+      .phone-frame::-webkit-scrollbar-thumb {
+        background-color: #bbb;
+        border-radius: 3px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="phone-frame">
+      <h2
+        style="
+          border-radius: 100px;
+          background-color: gold;
+          padding: 10px;
+          box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+        "
+      >
+        清津峡渓谷トンネル
+      </h2>
+      <div class="spot">
+        <div class="spot-description">
+          <h2></h2>
+          <img
+            src="https://niigata-kankou.or.jp/image/rendering/attraction_image/209333/trim.640/1/1?v=40e6d38ca5d2b31edecba97e961f0b7d8c39c07d"
+            alt=""
+            class="spot-image"
+          />
+          <img
+            src="https://niigata-kankou.or.jp/image/rendering/attraction_image/209334/trim.900/3/2?v=74556747d3a6f5a0863662525a2ee824aacb10a0"
+            alt=""
+            class="spot-image"
+          />
+          <img
+            src="https://niigata-kankou.or.jp/image/rendering/attraction_image/209335/trim.900/3/2?v=407c9617d87d3e27841a1b8683f89550b9289003"
+            alt=""
+            class="spot-image"
+          />
+          <img
+            src="https://niigata-kankou.or.jp/image/rendering/attraction_image/209336/trim.900/3/2?v=370aa7208f41bf09a0483a2789f0fb3d4ec3a936"
+            alt=""
+            class="spot-image"
+          />
+          <img
+            src="https://niigata-kankou.or.jp/image/rendering/attraction_image/209337/trim.900/3/2?v=36a022a489dcb079ce818db257a938a6d5bb5207"
+            alt=""
+            class="spot-image"
+          />
+          <p>
+            黒部峡谷・大杉谷とともに日本三大峡谷の一つとして知られる「清津峡」。川を挟んで切り立つ巨大な岩壁は全国に誇るＶ字形の大峡谷をつくり、国の名勝・天然記念物にも指定されています。
+            雄大な柱状節理の岩肌とダイナミックな清津川の景観は素晴らしく、訪れる人々に深い感動を与えます。さらに2018年の大地の芸術祭にて、中国の建築家集団「マ・ヤンソン
+            /
+            MADアーキテクツ」のアート作品として改修され、トンネル内部の大幅なリニューアルに加えて、エントランス施設も設置。自然の「5大要素」（木、土、金属、火、水）を利用しながら、建築的な空間とアーティスティックな雰囲気をつくりだし、この歴史あるトンネルを変容させました。
+          </p>
+          <p><strong>名称：</strong>清津峡渓谷トンネル（きよつきょう）</p>
 
-    <h2 style="border-radius: 100px; background-color: gold; padding: 10px; box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);">清津峡渓谷トンネル</h2>
-    <div class="spot">
-      <div class="spot-description">
-        <h2></h2>
-        <img src="https://niigata-kankou.or.jp/image/rendering/attraction_image/209333/trim.640/1/1?v=40e6d38ca5d2b31edecba97e961f0b7d8c39c07d" alt="" class="spot-image">
-        <img src="https://niigata-kankou.or.jp/image/rendering/attraction_image/209334/trim.900/3/2?v=74556747d3a6f5a0863662525a2ee824aacb10a0" alt="" class="spot-image">
-        <img src="https://niigata-kankou.or.jp/image/rendering/attraction_image/209335/trim.900/3/2?v=407c9617d87d3e27841a1b8683f89550b9289003" alt="" class="spot-image">
-        <img src="https://niigata-kankou.or.jp/image/rendering/attraction_image/209336/trim.900/3/2?v=370aa7208f41bf09a0483a2789f0fb3d4ec3a936" alt="" class="spot-image">
-        <img src="https://niigata-kankou.or.jp/image/rendering/attraction_image/209337/trim.900/3/2?v=36a022a489dcb079ce818db257a938a6d5bb5207" alt="" class="spot-image">
-        <p>黒部峡谷・大杉谷とともに日本三大峡谷の一つとして知られる「清津峡」。川を挟んで切り立つ巨大な岩壁は全国に誇るＶ字形の大峡谷をつくり、国の名勝・天然記念物にも指定されています。
+          <p><strong>所在地：</strong>新潟県十日町市小出</p>
 
-雄大な柱状節理の岩肌とダイナミックな清津川の景観は素晴らしく、訪れる人々に深い感動を与えます。さらに2018年の大地の芸術祭にて、中国の建築家集団「マ・ヤンソン / MADアーキテクツ」のアート作品として改修され、トンネル内部の大幅なリニューアルに加えて、エントランス施設も設置。自然の「5大要素」（木、土、金属、火、水）を利用しながら、建築的な空間とアーティスティックな雰囲気をつくりだし、この歴史あるトンネルを変容させました。</p>
-<p><strong>名称：</strong>清津峡渓谷トンネル（きよつきょう）</p>
+          <p>
+            <strong>営業時間：</strong>
+            ・通常期（4月〜11月）：8:30～17:00（最終受付 16:30）<br />
+            ・冬季（12月〜3月）：9:00～16:00（最終受付 15:30）<br />
+            ※年中無休（天候などにより臨時休業あり）
+          </p>
 
-<p><strong>所在地：</strong>新潟県十日町市小出</p>
+          <p>
+            <strong>入坑料金：</strong> ・大人（高校生以上）：1,000円<br />
+            ・小中学生：400円<br />
+            ・未就学児：無料
+          </p>
 
-<p><strong>営業時間：</strong>  
-・通常期（4月〜11月）：8:30～17:00（最終受付 16:30）<br>
-・冬季（12月〜3月）：9:00～16:00（最終受付 15:30）<br>
-※年中無休（天候などにより臨時休業あり）
-</p>
+          <p>
+            <strong>駐車場：</strong> 無料駐車場あり（普通車 約100台）<br />
+            ※繁忙期は臨時駐車場・シャトルバス運行あり
+          </p>
 
-<p><strong>入坑料金：</strong>  
-・大人（高校生以上）：1,000円<br>
-・小中学生：400円<br>
-・未就学児：無料
-</p>
+          <p>
+            <strong>アクセス：</strong>
+            ・車：関越自動車道「塩沢石打IC」から約25分<br />
+            ・電車＋バス：JR「越後湯沢駅」→森宮野原行きバス約25分 →
+            「清津峡入口」下車 徒歩30分
+          </p>
 
-<p><strong>駐車場：</strong>  
-無料駐車場あり（普通車 約100台）<br>
-※繁忙期は臨時駐車場・シャトルバス運行あり
-</p>
+          <p>
+            <strong>備考：</strong>
+            トンネル内は通年気温が低めのため、夏でも羽織るものがあると快適です。
+          </p>
 
-<p><strong>アクセス：</strong>  
-・車：関越自動車道「塩沢石打IC」から約25分<br>
-・電車＋バス：JR「越後湯沢駅」→森宮野原行きバス約25分 → 「清津峡入口」下車 徒歩30分
-</p>
-
-<p><strong>備考：</strong>  
-トンネル内は通年気温が低めのため、夏でも羽織るものがあると快適です。
-</p>
-
-<iframe
-  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3185.474745432697!2d138.72331101530758!3d37.08291497989838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5ff58b7fdbd08c6d%3A0xf8bff6c627804a8c!2z5p2x5bqD5ZyS!5e0!3m2!1sja!2sjp!4v1721104426025!5m2!1sja!2sjp"
-  width="100%"
-  height="500px"
-  style="border:0;"
-  allowfullscreen=""
-  loading="lazy"
-  referrerpolicy="no-referrer-when-downgrade">
-</iframe>
-
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3185.474745432697!2d138.72331101530758!3d37.08291497989838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5ff58b7fdbd08c6d%3A0xf8bff6c627804a8c!2z5p2x5bqD5ZyS!5e0!3m2!1sja!2sjp!4v1721104426025!5m2!1sja!2sjp"
+            width="100%"
+            height="500px"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
+        </div>
       </div>
     </div>
-
-  
-  </div>
-</body>
+  </body>
 </html>

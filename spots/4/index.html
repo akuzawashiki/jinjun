@@ -1,111 +1,138 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>新潟スタンプラリー</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: sans-serif;
-      background-color: #eaeaea;
-      display: flex;
-      justify-content: center;
-      padding: 0px 0;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>新潟スタンプラリー</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: sans-serif;
+        background-color: #eaeaea;
+        display: flex;
+        justify-content: center;
+        padding: 0px 0;
+      }
 
-    .phone-frame {
-      width: 420px;
-      max-width: 100%;
-      background-color: #fff;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-      overflow-y: auto;
-      padding: 5px;
-      box-sizing: border-box;
-      height: 100vh;
-    }
+      .phone-frame {
+        width: 420px;
+        max-width: 100%;
+        background-color: #fff;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        overflow-y: auto;
+        padding: 5px;
+        box-sizing: border-box;
+        height: 100vh;
+      }
 
-    .spot {
-      display: flex;
-      flex-direction: row;
-      align-items: flex-start;
-      margin-bottom: 24px;
-    }
+      .spot {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        margin-bottom: 24px;
+      }
 
-    .spot-description {
-      flex: 1;
-    }
+      .spot-description {
+        flex: 1;
+      }
 
-    .spot-description h2 {
-      margin: 0 0 6px;
-      font-size: 16px;
-    }
+      .spot-description h2 {
+        margin: 0 0 6px;
+        font-size: 16px;
+      }
 
-    .spot-description p {
-      margin: 0;
-      font-size: 14px;
-    }
+      .spot-description p {
+        margin: 0;
+        font-size: 14px;
+      }
 
-    .spot-image {
-      width: 100%;
-      height: 300px;
-      object-fit: cover;
-      border-radius: 0px;
-      box-shadow: 0 1px 5px rgba(0,0,0,0.1);
-    }
+      .spot-image {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 0px;
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+      }
 
-    .phone-frame::-webkit-scrollbar {
-      width: 6px;
-    }
+      .phone-frame::-webkit-scrollbar {
+        width: 6px;
+      }
 
-    .phone-frame::-webkit-scrollbar-thumb {
-      background-color: #bbb;
-      border-radius: 3px;
-    }
-  </style>
-</head>
-<body>
-  <div class="phone-frame">
+      .phone-frame::-webkit-scrollbar-thumb {
+        background-color: #bbb;
+        border-radius: 3px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="phone-frame">
+      <h2
+        style="
+          border-radius: 100px;
+          background-color: gold;
+          padding: 10px;
+          box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+        "
+      >
+        津南ひまわり広場（2025）
+      </h2>
 
-    <h2 style="border-radius: 100px; background-color: gold; padding: 10px; box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);">津南ひまわり広場（2025）</h2>
+      <div class="spot">
+        <div class="spot-description">
+          <img
+            src="https://niigata-kankou.or.jp/image/rendering/attraction_image/209692/trim.900/3/2?v=88bc15fbb259d7e8723a1a4a42e02e85a3d71f98"
+            alt="津南ひまわり広場の写真1"
+            class="spot-image"
+          />
+          <img
+            src="https://niigata-kankou.or.jp/image/rendering/attraction_image/209693/trim.900/3/2?v=c482865062c1c9d2b9e80cd2f9285191a2287550"
+            alt="津南ひまわり広場の写真2"
+            class="spot-image"
+          />
+          <img
+            src="https://niigata-kankou.or.jp/image/rendering/attraction_image/209694/trim.900/3/2?v=dde61727c98ef85a3f77d6be088b40e0e04bd58c"
+            alt="津南ひまわり広場の写真3"
+            class="spot-image"
+          />
 
-    <div class="spot">
-      <div class="spot-description">
-        <img src="https://niigata-kankou.or.jp/image/rendering/attraction_image/209692/trim.900/3/2?v=88bc15fbb259d7e8723a1a4a42e02e85a3d71f98" alt="津南ひまわり広場の写真1" class="spot-image">
-        <img src="https://niigata-kankou.or.jp/image/rendering/attraction_image/209693/trim.900/3/2?v=c482865062c1c9d2b9e80cd2f9285191a2287550" alt="津南ひまわり広場の写真2" class="spot-image">
-        <img src="https://niigata-kankou.or.jp/image/rendering/attraction_image/209694/trim.900/3/2?v=dde61727c98ef85a3f77d6be088b40e0e04bd58c" alt="津南ひまわり広場の写真3" class="spot-image">
+          <p>
+            毎年夏、50万本以上のひまわりが咲き誇る津南ひまわり広場。広大な畑に広がる黄色いじゅうたんのような光景は、見る人の心を明るく癒やしてくれます。2025年も7月下旬から8月中旬にかけて開催予定で、ひまわり迷路や写真撮影スポットも充実しています。
+          </p>
 
-        <p>毎年夏、50万本以上のひまわりが咲き誇る津南ひまわり広場。広大な畑に広がる黄色いじゅうたんのような光景は、見る人の心を明るく癒やしてくれます。2025年も7月下旬から8月中旬にかけて開催予定で、ひまわり迷路や写真撮影スポットも充実しています。</p>
+          <p><strong>名称：</strong>津南ひまわり広場</p>
 
-        <p><strong>名称：</strong>津南ひまわり広場</p>
+          <p><strong>所在地：</strong>新潟県中魚沼郡津南町赤沢</p>
 
-        <p><strong>所在地：</strong>新潟県中魚沼郡津南町赤沢</p>
+          <p>
+            <strong>開催期間：</strong>
+            2025年7月25日（金）～8月18日（月）予定（天候により変動あり）
+          </p>
 
-        <p><strong>開催期間：</strong>  
-        2025年7月25日（金）～8月18日（月）予定（天候により変動あり）</p>
+          <p><strong>駐車場：</strong> 無料駐車場あり（普通車 約300台）</p>
 
-        <p><strong>駐車場：</strong>  
-        無料駐車場あり（普通車 約300台）</p>
+          <p>
+            <strong>アクセス：</strong>
+            ・車：関越自動車道「塩沢石打IC」から約50分<br />
+            ・公共交通：JR「津南駅」からタクシーで約10分
+          </p>
 
-        <p><strong>アクセス：</strong>  
-        ・車：関越自動車道「塩沢石打IC」から約50分<br>
-        ・公共交通：JR「津南駅」からタクシーで約10分</p>
+          <p>
+            <strong>備考：</strong>
+            入場無料。売店や軽食、地元野菜の直売所あり。ペット同伴OK。
+          </p>
 
-        <p><strong>備考：</strong>  
-        入場無料。売店や軽食、地元野菜の直売所あり。ペット同伴OK。</p>
-
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3193.5981293500496!2d138.64334041530216!3d37.00791457990409!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5ff76e4dc4bc2f95%3A0xe15a71f63d28d7a0!2z5p2x5paw44K544Oe44K444Oq44Kv44K744Op44Oz44Kw44O844K4!5e0!3m2!1sja!2sjp!4v1721109202731!5m2!1sja!2sjp"
-          width="100%"
-          height="500px"
-          style="border:0;"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3193.5981293500496!2d138.64334041530216!3d37.00791457990409!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5ff76e4dc4bc2f95%3A0xe15a71f63d28d7a0!2z5p2x5paw44K544Oe44K444Oq44Kv44K744Op44Oz44Kw44O844K4!5e0!3m2!1sja!2sjp!4v1721109202731!5m2!1sja!2sjp"
+            width="100%"
+            height="500px"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
+        </div>
       </div>
     </div>
-  </div>
-</body>
+  </body>
 </html>
